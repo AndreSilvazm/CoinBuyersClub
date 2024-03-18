@@ -1,6 +1,9 @@
-# Título do projeto
+# Coin Buyers Club
 
-Um parágrafo da descrição do projeto vai aqui
+Você já pensou alguma vez em ter acesso aos dados mais importantes das suas criptos favoritas? Se a resposta for sim, o Coin Buyers Club vai te ajudar com isso!
+Além de te transferir para um desing inovador e estiloso de WallStreet, o Coin Buyers Club também te auxilia na parte analítica. Fazendo assim, que você fique por dentro de todos os dados fundamentais das criptos mais famosas do mercado.
+
+De uma olhada: https://coinbuyersclub.netlify.app/
 
 ## 🚀 Começando
 
@@ -13,87 +16,49 @@ Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar 
 De que coisas você precisa para instalar o software e como instalá-lo?
 
 ```
-Dar exemplos
+  1 - Ter algum editor de código instalado no seu PC (Visual studio code, Brackets)
 ```
 
-### 🔧 Instalação
-
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Diga como essa etapa será:
-
-```
-Dar exemplos
-```
-
-E repita:
-
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
-
-## ⚙️ Executando os testes
-
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
 
 ## 📦 Implantação
 
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+**Passo a Passo para instalação do projeto na sua máquina:**
+
+1. Faça o Download e instale o [Node JS](https://nodejs.org/). Após a instalação, você pode se certificar se está tudo certo executando esse código: `node --version` e `npm --version` no terminal.
+
+2. Clone o repositório com os seguintes comandos:
+
+    ```
+    git clone https://github.com/AndreSilvazm/CoinBuyers
+    ```
+
+3. Instale as dependências no seu diretório executando esse código no terminal:
+
+    ```
+    npm install
+    ```
+
+4. Execute esse código no seu terminal para começar a rodar a aplicação:
+    ```
+    npm run dev
+    ```
+
+5. Abra o seu navegador e escreva `localhost:3000` na barra de pesquisa, para ver o site!
+
+
+**Encerrar a aplicação:**
+   1. Digite `Ctrl+C` no terminal para encerrar o servidor.
 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
-
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-
-## 📌 Versão
-
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+* [ReactJS](https://pt-br.legacy.reactjs.org/)
+* [CSS](https://pt.wikipedia.org/wiki/Cascading_Style_Sheets)
+* [CoinGecko - API](https://www.coingecko.com/pt)
+* [TrendingView - Widgets](https://br.tradingview.com/)
+* [Vite](https://vitejs.dev/)
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
-
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
-
-## 🎁 Expressões de gratidão
-
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
-* etc.
-
+* **André Simão** - *Desenvolvedor Front-end* - [André Simão Linkeding](https://www.linkedin.com/in/andr%C3%A9-sim%C3%A3o-dev/)
 
 ---
-⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
