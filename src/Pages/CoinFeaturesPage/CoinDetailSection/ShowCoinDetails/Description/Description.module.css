@@ -1,19 +1,19 @@
 .DescriptionCointaner{
 
-    width: 90%;
+
+}
+
+.Paragraph{
+    width: 100%;
     height: fit-content;
     overflow-y: auto;
     color: white;
     text-align: center;
     margin: 1em auto;
     font-family: "Poppins", sans-serif;
-
-}
-
-.Paragraph{
-
     font-size: 14px;
     line-height: 1.6em;
+    text-align: center;
 }
 
 .Paragraph a{
@@ -23,8 +23,8 @@
 }
 
 @media (max-width: 800px) {
-    .DescriptionCointaner{
-
+    .Paragraph{
         height: 400px;
     }
+
 }
