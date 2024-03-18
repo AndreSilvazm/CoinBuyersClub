@@ -1,0 +1,36 @@
+.MainContainer{
+
+    width: 100%;
+    margin: 1.4em auto;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    padding: 1em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.VariacaoPreco{
+
+    color: black;
+}
+
+@media (max-width:1500px) {
+
+    .MainContainer{
+
+        width: 100%;
+        margin: 1.4em auto;
+        border-radius: 10px;
+        font-family: "Poppins", sans-serif;
+        padding: 1em;
+        color: white;
+    
+        
+    }
+    
+
+}

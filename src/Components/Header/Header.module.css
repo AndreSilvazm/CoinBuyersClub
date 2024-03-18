@@ -1,0 +1,38 @@
+.Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bungee", sans-serif;
+    font-style: normal;
+    background-color: transparent;
+    padding: 1em;
+    
+}
+
+
+.ImgContainer {
+    
+    width: 80px;
+    height: 80px;
+    background-color: #e11f36;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ImgContainer:hover{   
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+
+    transform: rotate(360deg);
+    
+}
+
+.SiteName {
+    color: white;
+    line-height: 24px;
+    margin-left: .5em;
+}

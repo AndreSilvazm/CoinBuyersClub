@@ -1,0 +1,50 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.LadingPageContainer {
+    position: relative;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.contentContainer{
+    position: relative; 
+    z-index: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white; 
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+}
+
+.contentContainer h1{
+
+    font-size: 2.3em;
+    margin-bottom: 2em;
+}
+
+.CustomizeWord{
+
+    color: #e11f36;
+    text-shadow: 5px 2px black;
+}

@@ -1,0 +1,24 @@
+.WidgetSection{
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow-y: hidden;
+    color: white;
+    background-color: #131722;
+    border-radius: 10px;
+    gap: 10px;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+
+}
+
+@media (max-width:900px) {
+    .WidgetSection{
+
+        width: 98%;
+    }
+}

@@ -1,0 +1,89 @@
+
+
+.CriptoMainContainer {
+
+    width: 100%;
+    background-color: black;
+    background-image: url('../../Midias/RedBlur.png');
+    overflow-y: hidden;
+
+}
+
+.CoinSection {
+
+    width: 100%;
+    color: white;
+    margin: auto;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    gap: 1;
+
+}
+
+.CoinSectionTitle{
+
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+
+.CustomWord{
+
+    color: #e11f36;
+    text-shadow: 5px 2px black;
+}
+
+.CoinsListContainer{
+
+    max-width: 100%;
+}
+
+.WidgetContainer{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 500px;
+    margin: auto;
+    overflow-y: hidden;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    border-radius: 12px;
+    
+}
+
+
+
+@media (max-width: 700px) {
+
+    .CoinSection{
+        
+        justify-content: space-around;
+        height: 70vh;
+        
+        
+    }
+
+    .CoinSectionTitle{
+
+        font-size: 25px;
+        text-transform: uppercase;
+    
+    }
+
+    .WidgetContainer{
+        display: none;
+
+    }
+
+
+}

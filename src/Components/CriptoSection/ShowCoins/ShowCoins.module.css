@@ -1,0 +1,115 @@
+
+body{
+
+    overflow-x: hidden;
+}
+
+.inner{
+    width: 1800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+
+        
+}
+
+.coinImg{
+    max-width: 80px;
+}
+
+.ListContainer{
+    height: 200px;
+    background-color: white;
+    color: black;
+    padding: 2em;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 2em;
+
+    
+}
+
+.ListContainer h1{
+
+    font-size: 1em;
+}
+
+.DetalhesLink{
+
+    display: none;
+    text-decoration: none;
+    color: #2962FF;
+    border-bottom: solid 1px black;
+}
+
+.ListContainer:hover{
+    
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.ListContainer:hover > span{
+    
+    font-weight: 600;
+}
+
+
+.ListContainer:hover > a{
+
+    display: block;
+}
+
+
+
+
+.currentPrice{
+
+    color: rgb(7, 104, 7);
+}
+
+
+
+
+@media (max-width: 1500px){
+    .inner{
+        width: 1850px;
+        display:flex ;
+        text-align: center;
+        justify-content: unset;
+        align-items: unset;
+        gap: 1em;
+        padding: 1em 0;
+
+    }
+    .Carousel{
+    
+        cursor: grab;
+        overflow: hidden;
+    }
+
+    .ListContainer{
+        background-color: white;
+        color: black;
+        padding: 2em;
+        border-radius: 12px;
+        align-items: center;
+    }
+
+    
+    
+}
+
+@media (max-width: 1100px) {
+    
+    .DetalhesLink{
+    
+        display: block;
+    }
+}
