@@ -1,8 +1,9 @@
 import React from 'react';
-import style from './CoinValuesContainer.module.css'
+import style from './MarketDatas.module.css'
 import { motion } from 'framer-motion'
 import { useEffect, useState, useRef } from 'react'
 
+//IMPORTAÇÃO DE ICONES
 import { GoGraph } from "react-icons/go";
 import { IoIosTrendingUp } from "react-icons/io";
 import { LiaCoinsSolid } from "react-icons/lia";
@@ -10,7 +11,7 @@ import { MdPeopleAlt } from "react-icons/md";
 
 
 
-function CoinValuesContainer({ Details }) {
+function MarketDatas({ Details }) {
 
     const carousel = useRef();
 
@@ -20,7 +21,6 @@ function CoinValuesContainer({ Details }) {
     function handleResize() {
 
         setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
-
     }
 
     useEffect(() => {
@@ -56,7 +56,6 @@ function CoinValuesContainer({ Details }) {
                     {/* VARIAÇÃO DE PREÇO */}
                     <section >
 
-                        
                         <h1><GoGraph/></h1>
                         <h1>Variações 24H</h1>
                         <article>
@@ -76,7 +75,6 @@ function CoinValuesContainer({ Details }) {
                             </span>
 
                         </article>
-
 
                     </section>
 
@@ -117,7 +115,7 @@ function CoinValuesContainer({ Details }) {
                         </article>
                     </section>
 
-                    {/*VOLUME DE MERCADO */}
+                    {/*COMUNIDADE*/}
                     <section>
                         <h1><MdPeopleAlt/></h1>
                         <h1>COMUNIDADE</h1>
@@ -151,4 +149,4 @@ function CoinValuesContainer({ Details }) {
     );
 }
 
-export default CoinValuesContainer;
+export default MarketDatas;

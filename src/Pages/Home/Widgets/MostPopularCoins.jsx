@@ -1,12 +1,13 @@
-import React, { useEffect, useRef, memo, useState } from 'react';
-function HomePageWidgets() {
+import React, { useEffect, useRef, memo } from 'react';
 
-  const container = useRef();
+function MostPopularCoins() {
+
+    const container = useRef();
 
 
-  function WidgetConfigurations() {
+    function WidgetConfigurations() {
 
-    const SymbolsAndStyle = `{
+        const SymbolsAndStyle = `{
         "symbols": [
           "BTCUSD",
           "ETHUSD",
@@ -45,7 +46,7 @@ function HomePageWidgets() {
         "lineType": 0
       }`;
 
-    const DateRange = `{
+        const DateRange = `{
         "dateRanges": [
           "1d|1",
           "1m|30",
@@ -56,37 +57,37 @@ function HomePageWidgets() {
         ]
       }`;
 
-    const FullJson = SymbolsAndStyle.slice(0, -1) + ',' + DateRange.substring(1); //JUNTANDO OS DOIS OBJETOS JSON
+        const FullJson = SymbolsAndStyle.slice(0, -1) + ',' + DateRange.substring(1); //JUNTANDO OS DOIS OBJETOS JSON
 
-    const script = document.createElement("script");
+        const script = document.createElement("script");
 
-    //FAZENDO LIGAÇÃO ASSÍCRONA COM O LINK EXTERNO
-    script.src = "https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js";
-    script.type = "text/javascript";
-    script.async = true;
+        //FAZENDO LIGAÇÃO ASSÍCRONA COM O LINK EXTERNO
+        script.src = "https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js";
+        script.type = "text/javascript";
+        script.async = true;
 
-    //INTEGRANDO AS CONFIGURAÇÕES À PAGINA HTML
-    script.innerHTML = FullJson
+        //INTEGRANDO AS CONFIGURAÇÕES À PAGINA HTML
+        script.innerHTML = FullJson
 
-    container.current.appendChild(script);
+        container.current.appendChild(script);
 
 
-  }
+    }
 
-  useEffect(
-    () => {
+    useEffect(
+        () => {
 
-      WidgetConfigurations()
+            WidgetConfigurations()
 
-    }, []
-  );
+        }, []
+    );
 
-  return (
-    <div className="tradingview-widget-container" ref={container}>
-      <div className="tradingview-widget-container__widget"></div>
-      <div className="tradingview-widget-copyright"><span className="blue-text">.</span></div>
-    </div>
-  );
+    return (
+        <div className="tradingview-widget-container" ref={container}>
+            <div className="tradingview-widget-container__widget"></div>
+            <div className="tradingview-widget-copyright"><span className="blue-text">.</span></div>
+        </div>
+    );
 }
 
-export default memo(HomePageWidgets);
+export default memo(MostPopularCoins);

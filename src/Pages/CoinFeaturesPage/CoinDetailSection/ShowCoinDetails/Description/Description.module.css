@@ -1,0 +1,30 @@
+.DescriptionCointaner{
+
+    width: 90%;
+    height: fit-content;
+    overflow-y: auto;
+    color: white;
+    text-align: center;
+    margin: 1em auto;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.Paragraph{
+
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+.Paragraph a{
+
+    color: #e11f36;
+
+}
+
+@media (max-width: 800px) {
+    .DescriptionCointaner{
+
+        height: 400px;
+    }
+}

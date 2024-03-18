@@ -4,8 +4,7 @@
 
     width: 100%;
     background-color: black;
-    background-image: url('../../Midias/RedBlur.png');
-    overflow-y: hidden;
+    background-image: url('../../../Midias/RedBlur.png');
 
 }
 
@@ -46,12 +45,12 @@
 
 .WidgetContainer{
     
+    width: 75%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 75%;
-    height: 500px;
+    text-align: center;
     margin: auto;
     overflow-y: hidden;
     color: black;
@@ -67,7 +66,6 @@
 
     .CoinSection{
         
-        justify-content: space-around;
         height: 70vh;
         
         
@@ -75,7 +73,7 @@
 
     .CoinSectionTitle{
 
-        font-size: 25px;
+        font-size: 2em;
         text-transform: uppercase;
     
     }

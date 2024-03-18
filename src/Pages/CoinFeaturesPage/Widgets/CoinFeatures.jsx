@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, memo, useState } from 'react';
-function CoinPageWidget({CoinName}) {
+import React, { useEffect, useRef, memo } from 'react';
+
+function CoinFeatures({CoinName}) {
 
     const container = useRef();
     const CoinSymbol = CoinName.toUpperCase()
@@ -83,4 +84,4 @@ function CoinPageWidget({CoinName}) {
     );
 }
 
-export default memo(CoinPageWidget);
+export default memo(CoinFeatures);

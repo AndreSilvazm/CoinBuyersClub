@@ -1,16 +1,12 @@
-import React, { useEffect } from 'react';
-import LandingPage from '../../Components/LandingPage/LandingPage';
-import CriptoSection from '../../Components/CriptoSection/CriptoSection';
-import HomePageWidgets from '../../Components/Widgets/HomePageWidgets';
+import React from 'react';
+import LandingPage from './LandingPage/LandingPage';
+import CriptoSection from './CriptoSection/CriptoSection';
+
 function Home() {
-
     return (   
-
         <>
             <LandingPage/>
-
-            <CriptoSection/>
-               
+            <CriptoSection/>   
         </>
     );
 }

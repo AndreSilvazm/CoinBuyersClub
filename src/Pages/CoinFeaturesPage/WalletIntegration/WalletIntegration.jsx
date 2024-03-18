@@ -1,26 +1,24 @@
 import React, { useState } from 'react';
-import styles from './WalletButton.module.css'
+import styles from './WalletIntegration.module.css'
 import { IoWallet } from "react-icons/io5";
 import { FaEthereum } from "react-icons/fa6";
 
 
 
-function WalletButton() {
+function WalletIntegration() {
 
   const [connected, setConnected] = useState(false);
 
   const [balance, setBalance] = useState(0);
-  const [DolarBalance, setDolarBalance] = useState(0)
 
+  //PARTE LÓGICA
   function ConvertWeiToEther(wei) {
 
     const ether = wei / 10 ** 18;
 
     return ether.toFixed(2);  //EXIBINDO O NUMERO COM 2 CASAS DECIMAIS
   }
-
-
-
+  
   async function connectToWallet() {
 
     if (window.ethereum) {
@@ -51,6 +49,7 @@ function WalletButton() {
     }
   };
 
+  //PARTE DE UI
   function ConnectButton() {
 
     return (
@@ -87,4 +86,4 @@ function WalletButton() {
   );
 }
 
-export default WalletButton;
+export default WalletIntegration;

@@ -1,24 +1,24 @@
 import React from 'react';
 import { useEffect, useState, useRef } from 'react'
-import GetCoinsList from '../../../API/GetCoinsList';
-import styles from './ShowCoins.module.css'
+import GetCoinsList from '../../../../API/GetCoinsList';
+import styles from './ShowCoinsList.module.css'
+
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom';
 
-function ShowCoins() {
+function ShowCoinsList() {
 
     const carousel = useRef();
-
     const [width, setWidth] = useState(0);
 
+    //CALCULANDO O TAMANHO DA TELA
     function handleResize() {
-                
-        setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth); 
+
+        setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
 
     }
 
     useEffect(() => {
-
 
         window.addEventListener('resize', handleResize); //TODA VEZ QUE O TAMANHO DA TELA FOR MUDADO, SERÁ ATRIBUIDO UM NOVO VALOR AO WIDTH
 
@@ -28,7 +28,7 @@ function ShowCoins() {
             window.removeEventListener('resize', handleResize);
         };
 
-    }, []); 
+    }, []);
 
 
     return (
@@ -37,11 +37,11 @@ function ShowCoins() {
 
                 <motion.div
 
-                 className={styles.inner} 
+                    className={styles.inner}
 
-                 drag={width < 1900 ? "x" : false} 
+                    drag={width < 1900 ? "x" : false}
 
-                 dragConstraints={width < 1900 ? { right: 0, left: -width } : false}>
+                    dragConstraints={width < 1900 ? { right: 0, left: -width } : false}>
 
                     {/*IMPRIMINDO DADOS DA API DENTRO DO CAROUSEL */}
 
@@ -59,7 +59,7 @@ function ShowCoins() {
 
                                 <span className={styles.currentPrice}>USD {e.current_price}</span>
 
-                                <Link className={styles.DetalhesLink} to={`/CoinDetails/${e.symbol}/${e.id}/${e.name}`}>Mais</Link>
+                                <Link className={styles.DetalhesLink} to={`/CoinFeatures/${e.symbol}/${e.id}/${e.name}`}>Mais</Link>
 
                             </section>
                         );
@@ -71,4 +71,4 @@ function ShowCoins() {
     );
 }
 
-export default ShowCoins;
+export default ShowCoinsList;

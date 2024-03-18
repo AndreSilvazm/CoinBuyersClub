@@ -3,6 +3,11 @@ body{
     overflow-x: hidden;
 }
 
+.Carousel{
+
+    margin-bottom: 2em;
+}
+
 .inner{
     width: 1600px;
     margin: auto;
@@ -30,24 +35,19 @@ body{
 
 }
 
-.inner section:hover{
-    transition: .5s ease-in-out;
-    transform: scale(1.1);
-    font-weight: 700;
-    margin: 0 1em;
-}
 
-h1{
+.inner section h1{
 
     text-transform: uppercase;
+    font-size: 1em;
 }
-h2{
+.inner section h2{
 
     text-transform: uppercase;
     font-size: small;
 }
 
-span{
+.inner section span{
 
     color: green;
     font-weight: 500;
@@ -67,7 +67,7 @@ span{
 
     .inner section{
 
-        width: 27%;
+        width: 23%;
         padding: 1em;
         background-color: white;
         color: black;
@@ -79,5 +79,6 @@ span{
     
         cursor: grab;
         overflow: hidden;
+        margin: 0;
     }
 }

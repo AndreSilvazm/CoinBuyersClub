@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 import styles from './ShowCoinDetails.module.css'
 import axios from 'axios';
 
-import CoinValuesContainer from './CoinValuesCotainer/CoinValuesContainer';
-import CoinLinksContainer from './CoinLinksContainer/CoinLinksContainer'
-
+import MarketDatas from './MarketDatas/MarketDatas';
+import Description from './Description/Description';
 
 function ShowCoinDetails({ CoinID }) {
 
@@ -24,7 +23,7 @@ function ShowCoinDetails({ CoinID }) {
 
         };
 
-        //FAZENDO REQUISIÇÃO NA API
+        //FAZENDO REQUISIÇÃO
         await axios.get(url, options)
 
             .then((response) => {
@@ -47,14 +46,24 @@ function ShowCoinDetails({ CoinID }) {
 
     return (
         <section>
-            
+
             {/*VERIFICANDO SE OS DADOS JÁ ESTÃO DISPONIVEIS ANTES DE DISTRIBUIR PARA OS COMPONENTS */}
-            
+
             {Details.length == 0 ? 'AGUARDANDO OS DADOS' :
 
-                <main className={styles.MainContainer}>
-                    <CoinValuesContainer Details={Details} />
-                </main>
+                <section className={styles.MainContainer}>
+                    
+                    {/*IMPRIMINDO AS DESCRIÇÕES */}
+                    <div className={styles.DescriptionContainer}>
+                        <Description Description={Details.description} />
+                    </div>
+
+                    {/*IMPRIMINDO OS DADOS DE MERCADO */}
+                    <div className={styles.MarketDataContainer}>
+                        <MarketDatas Details={Details} />
+                    </div>
+
+                </section>
 
             }
 

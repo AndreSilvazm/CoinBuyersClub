@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './CriptoSection.module.css'
-import ShowCoinsList from './ShowCoins/ShowCoinList';
-import HomePageWidgets from '../Widgets/HomePageWidgets';
+import ShowCoinsList from './ShowCoinsList/ShowCoinsList';
+import MostPopularCoinsWidget from '../Widgets/MostPopularCoins';
 
 
-function CriptoSection(props) {
+function CriptoSection() {
 
-    
+
     return (
         <>
 
@@ -14,9 +14,13 @@ function CriptoSection(props) {
 
                 <section className={styles.CoinSection}>
 
-                    <h1 className={styles.CoinSectionTitle}>Analise como um <span className={styles.CustomWord}>Wolf</span></h1>
+                    <article className="">
 
-                    <p>Aqui você tem acesso às melhores informações sobre Criptos!</p>
+                        <h1 className={styles.CoinSectionTitle}>Analise como um <span className={styles.CustomWord}>Wolf</span></h1>
+
+                        <p>Aqui você tem acesso às melhores informações sobre Criptos!</p>
+
+                    </article>
 
                     <div className={styles.CoinsListContainer}>
 
@@ -31,8 +35,8 @@ function CriptoSection(props) {
                 <section className={styles.WidgetContainer}>
 
                     {/*MOSTRANDO WIDGET DAS MOEDAS*/}
-                    <h1>Acompanhe em tempo real</h1>
-                    <HomePageWidgets />
+                    <h1>Cotação em tempo real</h1>
+                    <MostPopularCoinsWidget />
 
                 </section>
 

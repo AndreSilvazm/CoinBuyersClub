@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 import Home from '../Pages/Home/Home';
-import CoinDetailsPage from '../Pages/CoinDetailsPage/CoinDetailsPage';
+import CoinFeaturesPage from '../Pages/CoinFeaturesPage/CoinFeaturesPage'
 
 function Rotas() {
     return (
@@ -11,7 +11,7 @@ function Rotas() {
             <Router>
                 <Routes>
                     <Route path='/' element={<Home/>}/>
-                    <Route path='/CoinDetails/:symb/:id/:name' element={<CoinDetailsPage/>}/>
+                    <Route path='/CoinFeatures/:symb/:id/:name' element={<CoinFeaturesPage/>}/>
                 </Routes>
             </Router>
 
