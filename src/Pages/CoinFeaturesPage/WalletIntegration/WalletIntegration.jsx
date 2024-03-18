@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './WalletIntegration.module.css'
 import { IoWallet } from "react-icons/io5";
 import { FaEthereum } from "react-icons/fa6";
+import { toast } from 'react-toastify';
 
 
 
@@ -11,6 +12,18 @@ function WalletIntegration() {
 
   const [balance, setBalance] = useState(0);
 
+
+  const WalletConectedAlert = () => toast.success(`Carteira conectada com sucesso`, {
+    position: "top-center",
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+  });
+
   //PARTE LÓGICA
   function ConvertWeiToEther(wei) {
 
@@ -18,7 +31,7 @@ function WalletIntegration() {
 
     return ether.toFixed(2);  //EXIBINDO O NUMERO COM 2 CASAS DECIMAIS
   }
-  
+
   async function connectToWallet() {
 
     if (window.ethereum) {
@@ -27,6 +40,7 @@ function WalletIntegration() {
         // SOLICITANDO PERMISSÃO DO USUÁRIO
         await window.ethereum.request({ method: 'eth_requestAccounts' });
         setConnected(true);
+        WalletConectedAlert()
 
         // REQUISITANDO O SALDO DO ETHEREUM
         const accounts = await window.ethereum.request({ method: 'eth_accounts' });
@@ -55,7 +69,7 @@ function WalletIntegration() {
     return (
 
       <div className={styles.ConnectButtonContainer}>
-        
+
         <button onClick={connectToWallet} className={styles.WalletButton}> <IoWallet /></button>
         <span>Wallet</span>
 
@@ -71,7 +85,7 @@ function WalletIntegration() {
 
       <>
 
-        <p className={styles.EtherBalance}><FaEthereum/> Saldo: {balance}</p>
+        <p className={styles.EtherBalance}><FaEthereum /> Saldo: {balance}</p>
 
 
       </>
