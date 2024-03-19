@@ -29,7 +29,7 @@ function WalletIntegration() {
 
     const ether = wei / 10 ** 18;
 
-    return ether.toFixed(2);  //EXIBINDO O NUMERO COM 2 CASAS DECIMAIS
+    return ether.toFixed(18);  //EXIBINDO O NUMERO COM 18 CASAS DECIMAIS
   }
 
   async function connectToWallet() {
