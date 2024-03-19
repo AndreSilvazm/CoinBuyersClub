@@ -1,10 +1,6 @@
-.DescriptionCointaner{
-
-
-}
 
 .Paragraph{
-    width: 100%;
+    width: 90%;
     height: fit-content;
     overflow-y: auto;
     color: white;
@@ -24,7 +20,9 @@
 
 @media (max-width: 800px) {
     .Paragraph{
-        height: 400px;
+        height: 200px;
+        overflow: scroll;
+        margin-top: 0;
     }
 
 }
