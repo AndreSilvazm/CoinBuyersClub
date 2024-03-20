@@ -43,8 +43,6 @@ De que coisas você precisa para instalar o software e como instalá-lo?
     npm run dev
     ```
 
-5. Abra o seu navegador e escreva `localhost:3000` na barra de pesquisa, para ver o site!
-
 
 **Encerrar a aplicação:**
    1. Digite `Ctrl+C` no terminal para encerrar o servidor.
