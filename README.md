@@ -29,7 +29,7 @@ De que coisas você precisa para instalar o software e como instalá-lo?
 2. Clone o repositório com os seguintes comandos:
 
     ```
-    git clone https://github.com/AndreSilvazm/CoinBuyers.git
+    https://github.com/AndreSilvazm/CoinBuyersClub.git
     ```
 
 3. Instale as dependências no seu diretório executando esse código no terminal:
