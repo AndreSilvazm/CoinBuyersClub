@@ -7,9 +7,10 @@ function GetCoinsList() {
 
     async function ConsumirAPI() {
 
+        console.log('me chamou')
         //DADOS DE AUTENTICAÇÃO DA API
 
-        const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin%2Cethereum&category=layer-1&order=market_cap_desc&per_page=10';
+        const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10';
 
 
         const options = { headers:
@@ -31,6 +32,7 @@ function GetCoinsList() {
     useEffect(() => {
 
         ConsumirAPI()
+
 
     }, []);
 

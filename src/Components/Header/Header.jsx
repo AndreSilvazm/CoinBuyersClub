@@ -18,7 +18,7 @@ function Header(props) {
                         <img src={Logo} alt="Logo" />
 
                     </div>
-
+                    
                     <h1 className={styles.SiteName}>Coin <br /> buyers</h1>
                 </section>
 

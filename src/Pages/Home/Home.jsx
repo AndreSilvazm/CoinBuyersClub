@@ -6,7 +6,7 @@ function Home() {
     return (   
         <>
             <LandingPage/>
-            <CriptoSection/>   
+            <CriptoSection/>  
         </>
     );
 }

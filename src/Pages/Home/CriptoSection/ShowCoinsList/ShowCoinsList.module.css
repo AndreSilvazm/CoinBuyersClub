@@ -20,8 +20,8 @@ body{
 }
 
 .ListContainer{
-    height: 200px;
     background-color: white;
+    height: 250px;
     color: black;
     padding: 2em;
     border-radius: 12px;

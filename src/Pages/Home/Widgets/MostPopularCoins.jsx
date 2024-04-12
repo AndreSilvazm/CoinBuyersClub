@@ -11,14 +11,14 @@ function MostPopularCoins() {
         "symbols": [
           "BTCUSD",
           "ETHUSD",
+          "USDTUSD",
           "BNBUSD",
-          "CRYPTO:SOLUSD|1D|USD",
-          "BINANCE:ADAUSD|1D|USD",
-          "CRYPTO:AVAXUSD|1D|USD",
-          "CRYPTO:TONUSD|1D|USD",
-          "BINANCE:TRXUSD|1D|USD",
-          "KRAKEN:BCHUSD|1D|USD",
-          "BINANCE:NEARUSD|1D|USD"
+          "SOLUSD",
+          "XRPUSD",
+          "STETHUSD",
+          "USDCUSD",
+          "DOGEUSD",
+          "ADAUSD"
         ],
         "chartOnly": false,
         "width": "100%",

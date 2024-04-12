@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './WalletIntegration.module.css'
 import { IoWallet } from "react-icons/io5";
 import { FaEthereum } from "react-icons/fa6";
@@ -29,10 +29,48 @@ function WalletIntegration() {
 
     const ether = wei / 10 ** 18;
 
-    return ether.toFixed(2);  //EXIBINDO O NUMERO COM 2 CASAS DECIMAIS
+    return ether.toFixed(18);  //EXIBINDO O NUMERO COM 2 CASAS DECIMAIS
   }
 
+  async function WalletAlreadyConnected(){
+
+    if(window.ethereum.isConnected()){
+
+      try {
+
+        // REQUISITANDO O SALDO DO ETHEREUM
+        const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+        const address = accounts[0];
+        const balance = await window.ethereum.request({ method: 'eth_getBalance', params: [address] });
+
+        // CONVERTENDO O SALDO DE WEI PARA ETHEREUM
+        setBalance(ConvertWeiToEther(parseInt(balance)));
+
+        setConnected(true);
+
+      }
+
+      catch (error) {
+        console.error('Erro ao conectar à carteira MetaMask:', error);
+      }
+
+
+    }
+    else{
+
+      return;
+    }
+    
+  }
+
+  useEffect(()=>{
+
+    WalletAlreadyConnected()
+  },[])
+
+
   async function connectToWallet() {
+
 
     if (window.ethereum) {
 
